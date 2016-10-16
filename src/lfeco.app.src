@@ -1,0 +1,18 @@
+{application, lfeco,
+ [
+  {description, "A view of the LFE ecosystem."},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, {'lfeco-app', []}},
+  {applications, [kernel, stdlib, sasl, egithub, elli_date]},
+  {env, []},
+  {modules, [
+             'lfeco-sup',
+             'lfeco-app',
+             'lfeco-handler'
+            ]},
+
+  {maintainers, ["Eric Bailey"]},
+  {licenses, ["BSD-3"]},
+  {links, [{"GitHub", "https://github.com/quasiquoting/lfeco"}]}
+ ]}.
